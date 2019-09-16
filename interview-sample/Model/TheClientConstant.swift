@@ -40,32 +40,6 @@ extension TheClient {
     // MARK: JSON Response Keys
     struct JSONResponseKeys {
         
-        // MARK: General
-        static let StatusMessage = "message"
-        static let StatusCode = "responseCode"
-        static let results = "response"
-        
-        // MARK: Account
-        static let UserID = "userId"
-        static let UserType = "userType"
-        static let UserToken = "token"
-        static let UserObject = "userObject"
-        
-        
-        // MARK: Config
-        static let MangoId = "_id"
-        
-        // MARK: Company
-        static let CompanyID = "Company_ID"
-        static let CompanyCategoryID = "Category_ID"
-        static let CompanyCategoryType = "Category_type"
-        static let CompanySubCategoryType = "Sub_Category_desc"
-        static let CompanyName = "Company_name"
-        static let CompanyLogo = "Company_Logo"
-        static let CompanyWeb = "Company_Website"
-        static let CompanyPhone = "Company_Phone_no"
-        static let CompanyAddress = "Company_Address"
-      
         
     }
     

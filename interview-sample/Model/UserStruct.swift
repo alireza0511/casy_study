@@ -2,8 +2,8 @@
 //  UserStruct.swift
 //  interview-sample
 //
-//  Created by Jazzb Dev on 9/15/19.
-//  Copyright © 2019 Jazzb Dev. All rights reserved.
+//  Created by Alireza Khakpour on 9/15/19.
+//  Copyright © 2019 Alireza Khakpour. All rights reserved.
 //
 
 import Foundation

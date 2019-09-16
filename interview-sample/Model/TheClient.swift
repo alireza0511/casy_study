@@ -24,17 +24,14 @@ class TheClient: NSObject {
         if ConnectionManager.shared.isNetworkAvailable == false {
             completionHandlerForPOST(nil, TheClient.Messages.NetworkConnectionError)
         }
-        /* 1. Set the parameters */
         
         
-        /* 2/3. Build the URL, Configure the request */
         let request = NSMutableURLRequest(url: urlFromParameters(parameters, withPathExtension: method, isAuth: true))
         
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = jsonBody.data(using: String.Encoding.utf8)
         
-        /* 4. Make the request */
         let task = session.dataTask(with: request as URLRequest) { (data, response, error) in
             
             func sendError(_ error: String) {
@@ -42,29 +39,28 @@ class TheClient: NSObject {
                 completionHandlerForPOST(nil, error)
             }
             
-            /* GUARD: Was there an error? */
             guard (error == nil) else {
                 sendError("There was an error with your request: \(error!)")
                 return
             }
             
-            /* GUARD: Did we get a successful 2XX response? */
-            guard let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode >= 200 && statusCode <= 299 else {
+            if let statusCode = (response as? HTTPURLResponse)?.statusCode ,
+                statusCode != 400  && statusCode <= 200 && statusCode >= 299 {
                 sendError("Your request returned a status code other than 2xx!")
+                
                 return
             }
             
-            /* GUARD: Was there any data returned? */
+            
             guard let data = data else {
                 sendError("No data was returned by the request!")
                 return
             }
             
-            /* 5/6. Parse the data and use the data (happens in completion handler) */
+            
             self.convertDataWithCompletionHandler(data, completionHandlerForConvertData: completionHandlerForPOST)
         }
         
-        /* 7. Start the request */
         task.resume()
         
         return task
@@ -76,41 +72,34 @@ class TheClient: NSObject {
         if ConnectionManager.shared.isNetworkAvailable == false {
             completionHandlerForGET(nil, TheClient.Messages.NetworkConnectionError)
         }
-        /* 1. Set the parameters */
         
-        /* 2/3. Build the URL, Configure the request */
         let request = NSMutableURLRequest(url: urlFromParameters(parameters, withPathExtension: method, isAuth: false))
         
-        /* 4. Make the request */
         let task = session.dataTask(with: request as URLRequest) { (data, response, error) in
             
             func sendError(_ error: String) {
                 completionHandlerForGET(nil, error)
             }
             
-            /* GUARD: Was there an error? */
             guard (error == nil) else {
                 sendError("There was an error with your request: \(error!)")
                 return
             }
             
-            /* GUARD: Did we get a successful 2XX response? */
             guard let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode >= 200 && statusCode <= 299 else {
                 sendError("Your request returned a status code other than 2xx!")
                 return
             }
             
-            /* GUARD: Was there any data returned? */
             guard let data = data else {
                 sendError("No data was returned by the request!")
                 return
             }
             
-            /* 5/6. Parse the data and use the data (happens in completion handler) */
+            
             self.convertDataWithCompletionHandler(data, completionHandlerForConvertData: completionHandlerForGET)
         }
         
-        /* 7. Start the request */
         task.resume()
         
         return task

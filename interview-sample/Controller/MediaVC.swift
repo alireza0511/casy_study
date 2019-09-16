@@ -37,7 +37,10 @@ class MediaVC: BaseVC {
         self.showSpinner()
         TheClient.sharedInstance().getMediaInfo { (results, error) in
             if let error = error {
-                
+                performUIUpdatesOnMain {
+                    self.removeSpinner()
+                }
+                self.showConnectionResponseError(errorMessage: error)
             } else {
                 if let results = results {
                     self.listData = results
@@ -64,8 +67,8 @@ extension MediaVC: UITableViewDelegate, UITableViewDataSource {
             cell.imgView.kf.setImage(with: url)
         }
         
-        
         cell.descLbl.text = item.desc
+        cell.playBtn.isHidden = true
         
         return cell
     }

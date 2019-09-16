@@ -13,17 +13,14 @@ extension TheClient{
     // MARK: POST Convenience Methods
     func authRequest(method: String, jsonBody: String, completionHandlerForAuth: @escaping ( _ success: Bool, _ error: String?) -> Void) {
         
-        /* 1. Specify parameters, method (if has {key}), and HTTP body (if POST) */
+  
         let parameters = [TheClient.ParameterKeys.Key : TheClient.Constants.ApiKey]
         var mutableMethod: String
-        //        mutableMethod = substituteKeyInMethod(mutableMethod, key: TMDBClient.URLKeys.UserID, value: String(TMDBClient.sharedInstance().userID!))!
+      
         mutableMethod = method
-        
-        
-        /* 2. Make the request */
+   
         let _ = taskForPOSTMethod(mutableMethod, parameters: parameters as [String : AnyObject], jsonBody: jsonBody) { (results, error) in
             
-            /* 3. Send the desired value(s) to completion handler */
             if let error = error {
                 completionHandlerForAuth(false, error)
             } else {
@@ -41,16 +38,13 @@ extension TheClient{
     
     // MARK: GET Media Convenience Methods
     func getMediaInfo(completionHandlerForMedia: @escaping (_ result: [MediaStruct]?, _ error: String?) -> Void) {
-        
-        /* 1. Specify parameters, method (if has {key}), and HTTP body (if POST) */
+
         let parameters = [TheClient.ParameterKeys.AuthToken : userStruct?.token]
         var mutableMethod: String
         mutableMethod = TheClient.Methods.MediaInfo
         
-        /* 2. Make the request */
         let _ = taskForGETMethod(mutableMethod, parameters: parameters as [String : AnyObject]) { (results, error) in
             
-            /* 3. Send the desired value(s) to completion handler */
             if let error = error {
                 completionHandlerForMedia(nil, error)
             } else {
