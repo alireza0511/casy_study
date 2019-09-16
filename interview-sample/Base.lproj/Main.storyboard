@@ -26,8 +26,14 @@
                                     <constraint firstAttribute="height" constant="150" id="rqY-Zr-vEe"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgc-bu-nI9">
+                                <rect key="frame" x="24" y="769.5" width="366" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="h4R-kB-Ewv">
-                                <rect key="frame" x="32" y="262" width="350" height="182"/>
+                                <rect key="frame" x="32" y="274" width="350" height="182"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y7A-5X-5hy">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
@@ -72,25 +78,38 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="h4R-kB-Ewv" secondAttribute="trailing" priority="750" constant="24" id="1Sb-kx-9F3"/>
+                            <constraint firstItem="Wgc-bu-nI9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="48M-Wl-Feg"/>
                             <constraint firstItem="h4R-kB-Ewv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="750" constant="24" id="4SZ-Kz-7Uy"/>
+                            <constraint firstItem="Wgc-bu-nI9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="9IA-vo-Lct"/>
                             <constraint firstItem="1bh-rl-pYG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mmu-LZ-ki9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wgc-bu-nI9" secondAttribute="bottom" constant="23" id="Ygk-qY-YIG"/>
                             <constraint firstItem="h4R-kB-Ewv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uO5-S6-D1g"/>
                             <constraint firstItem="1bh-rl-pYG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="vXX-Q4-gnm"/>
-                            <constraint firstItem="h4R-kB-Ewv" firstAttribute="top" secondItem="1bh-rl-pYG" secondAttribute="bottom" constant="8" symbolic="YES" id="xZi-G3-IOD"/>
+                            <constraint firstItem="h4R-kB-Ewv" firstAttribute="top" secondItem="1bh-rl-pYG" secondAttribute="bottom" constant="20" id="xZi-G3-IOD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="7Wk-aN-Upj" appends="YES" id="RCj-N3-fFg"/>
+                        </connections>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="confirmPassTxf" destination="wuS-7s-1Fo" id="jCc-xY-9YN"/>
+                        <outlet property="debugLbl" destination="Wgc-bu-nI9" id="1fU-c6-BaO"/>
                         <outlet property="emailTxf" destination="y7A-5X-5hy" id="Pjd-55-lJQ"/>
+                        <outlet property="imgView" destination="1bh-rl-pYG" id="bVG-uB-czy"/>
                         <outlet property="passTxf" destination="Z4p-ow-isu" id="0bU-uD-Sc5"/>
                         <outlet property="registerBtn" destination="sJt-sY-Cpb" id="BwW-jI-TdD"/>
                         <outlet property="registerSwitchBtn" destination="ctS-EN-XLY" id="rEu-W9-kZO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7Wk-aN-Upj">
+                    <connections>
+                        <action selector="userDidTapView:" destination="BYZ-38-t0r" id="uD7-41-ZVu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="101.78571428571428"/>
         </scene>
