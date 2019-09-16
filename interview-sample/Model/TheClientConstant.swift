@@ -11,10 +11,10 @@ import Foundation
 extension TheClient {
     // MARK: Constants
     struct Constants {
-        
+        //https://interview-sample.firebaseio.com/data
         static let ApiScheme = "https"
-        static let ApiHost = "node.jazzb.com"
-        static let ApiPath = "/api"
+        static let ApiHost = "interview-sample.firebaseio.com"
+        static let ApiPath = ""
         // https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=[API_KEY]
         static let AuthHost = "identitytoolkit.googleapis.com"
         static let AuthPath = "/v1/accounts:"
@@ -30,11 +30,8 @@ extension TheClient {
         static let Signin = "signInWithPassword"
         // MARK: Sign up
         static let Signup = "signUp"
-        
-        // MARK: User Info
-        static let UserInfo = "/user/phone_user"
-        // MARK: CompanyInfo
-        static let CompanyInfo = "/admin/cifo_s/"
+        // MARK: Media Info
+        static let MediaInfo = "/data.json"
        
         
        
@@ -74,6 +71,7 @@ extension TheClient {
     
     struct ParameterKeys {
         static let Key = "key"
+        static let AuthToken = "auth"
     }
     // MARK: Messages
     struct Messages {

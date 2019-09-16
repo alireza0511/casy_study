@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  interview-sample
 //
-//  Created by Alireza Khakpout on 9/15/19.
-//  Copyright © 2019 Alireza Khakpout. All rights reserved.
+//  Created by Alireza Khakpour on 9/15/19.
+//  Copyright © 2019 Alireza Khakpour. All rights reserved.
 //
 
 import UIKit
@@ -83,7 +83,7 @@ class AuthVC: BaseVC {
                             self.removeSpinner()
                             self.setUIEnabled(false, registerMode: RegisterMode.signIn)
                             self.debugLbl.text = ""
-                            //self.performSegue(withIdentifier: " ", sender: self)
+                            self.performSegue(withIdentifier: "sague_media", sender: self)
                         }
                     }
                 }

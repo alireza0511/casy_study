@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,12 +16,16 @@
 		5E185043232EBC6900119B39 /* ActivitySpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E185042232EBC6900119B39 /* ActivitySpinnerView.swift */; };
 		5E185045232EBCE600119B39 /* ActivitySpinnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E185044232EBCE600119B39 /* ActivitySpinnerView.xib */; };
 		5E185049232F255B00119B39 /* TheClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E185048232F255B00119B39 /* TheClient.swift */; };
-		5E18504B232F25D700119B39 /* ClientConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18504A232F25D700119B39 /* ClientConstant.swift */; };
+		5E18504B232F25D700119B39 /* TheClientConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18504A232F25D700119B39 /* TheClientConstant.swift */; };
 		5E18504D232F26FB00119B39 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18504C232F26FB00119B39 /* Reachability.swift */; };
 		5E18504F232F272C00119B39 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18504E232F272C00119B39 /* GCDBlackBox.swift */; };
 		5E185051232F276300119B39 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E185050232F276300119B39 /* ConnectionManager.swift */; };
 		5E185053232F374D00119B39 /* TheClientConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E185052232F374D00119B39 /* TheClientConvenience.swift */; };
 		5E185055232F3D5900119B39 /* UserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E185054232F3D5900119B39 /* UserStruct.swift */; };
+		5E185057232FB06D00119B39 /* MediaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E185056232FB06D00119B39 /* MediaVC.swift */; };
+		5E185059232FB1E800119B39 /* MediaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E185058232FB1E800119B39 /* MediaTableCell.swift */; };
+		5E18505B232FB52C00119B39 /* MediaStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18505A232FB52C00119B39 /* MediaStruct.swift */; };
+		F5E6DAD244DE695FA5F4C684 /* Pods_interview_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B9D19D57A7BFACA5378BC1 /* Pods_interview_sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +59,18 @@
 		5E185042232EBC6900119B39 /* ActivitySpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySpinnerView.swift; sourceTree = "<group>"; };
 		5E185044232EBCE600119B39 /* ActivitySpinnerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitySpinnerView.xib; sourceTree = "<group>"; };
 		5E185048232F255B00119B39 /* TheClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheClient.swift; sourceTree = "<group>"; };
-		5E18504A232F25D700119B39 /* ClientConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientConstant.swift; sourceTree = "<group>"; };
+		5E18504A232F25D700119B39 /* TheClientConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheClientConstant.swift; sourceTree = "<group>"; };
 		5E18504C232F26FB00119B39 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		5E18504E232F272C00119B39 /* GCDBlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
 		5E185050232F276300119B39 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		5E185052232F374D00119B39 /* TheClientConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheClientConvenience.swift; sourceTree = "<group>"; };
 		5E185054232F3D5900119B39 /* UserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStruct.swift; sourceTree = "<group>"; };
+		5E185056232FB06D00119B39 /* MediaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaVC.swift; sourceTree = "<group>"; };
+		5E185058232FB1E800119B39 /* MediaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableCell.swift; sourceTree = "<group>"; };
+		5E18505A232FB52C00119B39 /* MediaStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaStruct.swift; sourceTree = "<group>"; };
+		6BECA20B5F70956325D3D29A /* Pods-interview-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interview-sample.release.xcconfig"; path = "Target Support Files/Pods-interview-sample/Pods-interview-sample.release.xcconfig"; sourceTree = "<group>"; };
+		D4B9D19D57A7BFACA5378BC1 /* Pods_interview_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_interview_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFB86C8293E3424D1ADFFA0 /* Pods-interview-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interview-sample.debug.xcconfig"; path = "Target Support Files/Pods-interview-sample/Pods-interview-sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E6DAD244DE695FA5F4C684 /* Pods_interview_sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,11 +99,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5427245573976CF12F3F0769 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAFB86C8293E3424D1ADFFA0 /* Pods-interview-sample.debug.xcconfig */,
+				6BECA20B5F70956325D3D29A /* Pods-interview-sample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		56FDCB5D9445CE77BA556B96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4B9D19D57A7BFACA5378BC1 /* Pods_interview_sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E185004232E800900119B39 = {
 			isa = PBXGroup;
 			children = (
 				5E18500F232E800900119B39 /* interview-sample */,
 				5E18500E232E800900119B39 /* Products */,
+				5427245573976CF12F3F0769 /* Pods */,
+				56FDCB5D9445CE77BA556B96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,16 +139,13 @@
 		5E18500F232E800900119B39 /* interview-sample */ = {
 			isa = PBXGroup;
 			children = (
-				5E18503E232EB08E00119B39 /* Controller */,
 				5E185010232E800900119B39 /* AppDelegate.swift */,
 				5E18504C232F26FB00119B39 /* Reachability.swift */,
 				5E18504E232F272C00119B39 /* GCDBlackBox.swift */,
 				5E185050232F276300119B39 /* ConnectionManager.swift */,
+				5E18503E232EB08E00119B39 /* Controller */,
 				5E185046232F251B00119B39 /* Model */,
 				5E185041232EBC4600119B39 /* View */,
-				5E185014232E800900119B39 /* Main.storyboard */,
-				5E185017232E800B00119B39 /* Assets.xcassets */,
-				5E185019232E800B00119B39 /* LaunchScreen.storyboard */,
 				5E18501C232E800B00119B39 /* Info.plist */,
 			);
 			path = "interview-sample";
@@ -128,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				5E185012232E800900119B39 /* AuthVC.swift */,
+				5E185056232FB06D00119B39 /* MediaVC.swift */,
 				5E18503F232EB9D500119B39 /* BaseVC.swift */,
 			);
 			path = Controller;
@@ -136,7 +164,11 @@
 		5E185041232EBC4600119B39 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5E185017232E800B00119B39 /* Assets.xcassets */,
+				5E185014232E800900119B39 /* Main.storyboard */,
 				5E185042232EBC6900119B39 /* ActivitySpinnerView.swift */,
+				5E185058232FB1E800119B39 /* MediaTableCell.swift */,
+				5E185019232E800B00119B39 /* LaunchScreen.storyboard */,
 				5E185044232EBCE600119B39 /* ActivitySpinnerView.xib */,
 			);
 			path = View;
@@ -148,7 +180,8 @@
 				5E185048232F255B00119B39 /* TheClient.swift */,
 				5E185052232F374D00119B39 /* TheClientConvenience.swift */,
 				5E185054232F3D5900119B39 /* UserStruct.swift */,
-				5E18504A232F25D700119B39 /* ClientConstant.swift */,
+				5E18505A232FB52C00119B39 /* MediaStruct.swift */,
+				5E18504A232F25D700119B39 /* TheClientConstant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E185035232E800B00119B39 /* Build configuration list for PBXNativeTarget "interview-sample" */;
 			buildPhases = (
+				4CA14DA60D03A8CECF327947 /* [CP] Check Pods Manifest.lock */,
 				5E185009232E800900119B39 /* Sources */,
 				5E18500A232E800900119B39 /* Frameworks */,
 				5E18500B232E800900119B39 /* Resources */,
+				B39FD646C8C259A2B6D62696 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,16 +315,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CA14DA60D03A8CECF327947 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-interview-sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B39FD646C8C259A2B6D62696 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-interview-sample/Pods-interview-sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-interview-sample/Pods-interview-sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-interview-sample/Pods-interview-sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E185009232E800900119B39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5E18504F232F272C00119B39 /* GCDBlackBox.swift in Sources */,
+				5E185057232FB06D00119B39 /* MediaVC.swift in Sources */,
 				5E18504D232F26FB00119B39 /* Reachability.swift in Sources */,
-				5E18504B232F25D700119B39 /* ClientConstant.swift in Sources */,
+				5E18504B232F25D700119B39 /* TheClientConstant.swift in Sources */,
 				5E185013232E800900119B39 /* AuthVC.swift in Sources */,
+				5E18505B232FB52C00119B39 /* MediaStruct.swift in Sources */,
 				5E185051232F276300119B39 /* ConnectionManager.swift in Sources */,
+				5E185059232FB1E800119B39 /* MediaTableCell.swift in Sources */,
 				5E185040232EB9D500119B39 /* BaseVC.swift in Sources */,
 				5E185055232F3D5900119B39 /* UserStruct.swift in Sources */,
 				5E185053232F374D00119B39 /* TheClientConvenience.swift in Sources */,
@@ -466,6 +546,7 @@
 		};
 		5E185036232E800B00119B39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAFB86C8293E3424D1ADFFA0 /* Pods-interview-sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -485,6 +566,7 @@
 		};
 		5E185037232E800B00119B39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BECA20B5F70956325D3D29A /* Pods-interview-sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
